@@ -1,9 +1,9 @@
-package com.itwill.rsp;
+package com.itwill.rspswitch;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Rsp {
+public class RspSwitch {
 
     public static void main(String[] args) {
         // 가위/바위/보 (Rock-Scissors-Paper) 게임:
