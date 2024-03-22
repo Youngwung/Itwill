@@ -7,7 +7,7 @@ public class VariableMain01 {
 		// 변수 사용:
 		// (1) 변수 선언: 저장하는 데이터의 종류(타입)와 변수 이름을 선언. 
 		// (2) 변수 초기화: 변수에 값을 처음 저장하는 것.
-		int age; //정수(intege)를 저장하는 변수 age  					=> 변수 선언
+		int age; //정수(integer)를 저장하는 변수 age  					=> 변수 선언
 		age = 28; // 변수 age를 28로 초기화(변수 age에 정수 28을 저장)  => 변수 초기화
 		
 		System.out.println("나이: "+ age);

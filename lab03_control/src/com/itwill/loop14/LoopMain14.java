@@ -26,12 +26,12 @@ public class LoopMain14 {
 				System.out.print("출금액>>>");
 				int j = sc.nextInt();
 				sum = sum - j;
+
 			} else if (i == 3) {
 				System.out.printf("잔고>>>%d\n", sum);
 			} else {
 				System.out.println("프로그램 종료.");
 				run = false;
-			
 
 			}
 		}

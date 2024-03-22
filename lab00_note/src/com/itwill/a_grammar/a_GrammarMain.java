@@ -1,0 +1,81 @@
+package com.itwill.a_grammar;
+
+import java.util.Random; // Random을 사용하기 위한 import 문
+
+import java.util.Scanner; // Scanner를 사용하기 위한 import 문
+
+public class a_GrammarMain {
+
+	public static void main(String[] args) {
+
+		// Random(랜덤)
+
+		Random random = new Random(); // 난수를 만들기 위한 변수 random을 선언
+		int random_a = random.nextInt(1, 11); // 1이상 11 미만의 난수를 random_a에 저장, 1은 생략가능하고 그 경우 0이상 n미만의 난수를 저장한다.
+
+		// Scanner(스캐너)
+		Scanner scanner = new Scanner(System.in); // 입력받기 위한 변수 scanner를 선언
+		int scanner_a = Integer.parseInt(scanner.nextLine()); // scanner로 입력받아 scanner_a에 정수로 저장
+		double scanner_b = Double.parseDouble(scanner.nextLine()); // scanner로 입력받아 scanner_b에 실수로 저장
+		String scanner_c = scanner.nextLine(); // scanner로 입력받아 scanner_c에 문자열로 저장
+
+		// Array(배열)
+		int[] array01 = new int[10]; // int 타입 데이터 10개를 저장할 수 있는 배열을 생성
+		int[] array01_1 = { 1, 2, 3, 4 }; // 배열선언 두번째 방법. new 필요 없이 데이터를 나열하여 생성
+		int array01_a = array01[0]; // array 배열의 0번째 인덱스를 array_a에 저장 / 1이 저장됨
+
+		double[] array02 = new double[10]; // double 타입 - 실수
+		double[] array02_1 = { 1, 2, 3, 4 }; // 실수를 나열하여 생성
+		double array02_a = array02[0]; // 1이 저장됨
+
+		String[] array03 = new String[10]; // String 타입 - 문자열
+		String[] array03_1 = { "가", "나", "다", "라" };
+		String array03_a = array03[0]; // (가) 저장
+
+		int leng = array01.length; // leng 변수에 array01배열의 길이 (10) 을 저장, 이 코드는 읽기 전용 코드. 배열의 길이를 바꾸는 것은 불가.
+
+		/////////다차원배열
+		// (1) 첫번째 방법: 타입[][] 변수 이름 = new 타입[][] {{...}, {...}, {...}, {...}, ...}
+		int[][] arrays01 = { { 1, 2, 3, 4 }, { 5, 6 }, { 7, 8, 9, 10, 11, 12 }, }; // 2차원 배열이 갖는 모든 원소들을 나열하면서 배열을
+																					// 선언하고 초기화. 1차원 배열끼리 길이가 같지 않아도 됨.
+//		int[][] arrays02 = { // 알아보기 쉽게 선언하기.
+//				{ 1, 2, 3 }, 
+//				{ 4, 5, 6 }, 
+//				{ 7, 8, 9 }, 
+//		};
+		
+		// (2) 두번 째 방법: 2차원 배열의 행의 개수는 결정 되어져 있고, 열의 개수가 결정되지 않은경우
+		// 2차원 배열이 가지고 있는 1차원 배열의 개수는 알고 있지만
+		// 각각의 1차원 배열들의 원소 개수는 아직 결정되지 않은 경우
+		// 또는 1차원 배열들의 길이가 모두 다른 경우.
+		// 타입[][] 변수이름 = new int[n][];
+		int[][] arrays04 = new int[3][]; // 1차원 배열 3개를 원소로 갖는 2차원 배열.
+		// 열의 개수가 미정인 2차원 배열은 사용하기 전에 반드시 1차원 배열들을 각각 생성해야만 함.
+		arrays04[0] = new int[2]; //원소 2개를 갖는 1차원 배열.
+		arrays04[1] = new int[4]; //원소 4개를 갖는 1차원 배열.
+		arrays04[2] = new int[3]; //원소 3개를 갖는 1차원 배열.
+		
+		
+		
+		// Method(메서드)
+			//메서드 선언(정의) 방법:
+			// [수식어] 리턴타입 메서드이름([파라미터 선언, ...]){ code; ... }  => 대괄호로 표시한 부분은 생략이 가능.
+		
+//		public static double add(double x, double y) {
+//			return x + y; // return 문: 메서드를 호출한 곳으로 값을 반환하는 문장.
+		
+//		}
+		
+			//메서드 호출 방법
+		//리턴값이 있는 경우
+		//변수타입 변수이름 = 메서드이름(아규먼트, 아규먼트)
+		//double result = add(x, y);
+	
+
+	
+	
+	
+	
+	}
+	
+}
