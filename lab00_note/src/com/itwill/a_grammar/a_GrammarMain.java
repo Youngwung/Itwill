@@ -70,8 +70,60 @@ public class a_GrammarMain {
 		//리턴값이 있는 경우
 		//변수타입 변수이름 = 메서드이름(아규먼트, 아규먼트)
 		//double result = add(x, y);
-	
-
+		
+			// 메서드 오버로딩(method overloading)
+		// 메서드의 파라미터가 다르면 같은 이름으로 메서드를 여러개 선언(정의)할 수 있다.
+		// (주의) 메서드의 파라미터는 동일하고 리턴 타임만 다르게는 오버로딩할 수 없음.
+		System.out.println("안녕하세요"); // println (String)
+		System.out.println(100); // println(int x)
+		System.out.println(); // println()
+		System.out.println(true); // println(boolean)
+		
+				// 메서드 오버로딩 만들어보기
+		/**
+		 * 콘솔에 빈 줄 하나를 출력하는 메서드.
+		 */
+//		public static void newLine( ) {
+//			System.out.println();
+//		}
+		
+		/**
+		 * 콘솔에 n개의 빈 줄을 출력하는 메서드.
+		 * @param n 콘솔에 출력할 빈 줄의 개수. 0 또는 양의 정수 만약 0 또는 음수이면 아무것도 출력하지 않음
+		 */
+//		public static void newLine(int n) {
+//			for(int i = 1; i <= n; i++) {
+//				System.out.println();
+//			}
+//		}
+		
+			// 가변길이 인수(variable-length argument)
+		// 메서드의 아규먼트 개수가 미리 정해져 있지 않은 경우.
+		// 메서드를 호출할 때마다 아규먼트 개수가 달라질 수 있음.
+		// - 대표적으로 "printf"
+		System.out.printf("Hello\n"); // argument 1개
+		System.out.printf("안녕하세요, %s\n", "오쌤"); // argument 2개
+		System.err.printf("%d x %d = %d \n", 5, 2, 10); // argument 4개
+		
+			// 가변길이 인수를 갖는 메서드를 선언하는 방법:
+		// 가변길이 인수를 저장하는 파라미터는 "변수타입... 변수이름" 형식으로선언.
+		// 가변길이 인수는 메서드안에서 배열처럼 취급. ****************************
+		// -가변길이 인수는 length 속성을 가지고 있음.
+		// -for 문, 향상된 for 문에서 사용할 수 있음.
+		// 가변길이 인수를 저장하는 파라미터는 반드시 마지막 파라미터여야 함!
+		// 가변길이 인수를 저장하는 파라미터는 2개 이상 있을 수 없음!
+		// 가변길이 인수를 갖는 메서드를 호출할 때는 아규먼트 개수의 제한이 없음.
+		// - 아규먼트를 전달하지 않아도 됨.
+				
+//		public static int addAll(int... args) {		//배열로 취급하기 때문에 each-for문이 사용 가능
+//			int result = 0;
+//			System.out.println("length = " + args.length);
+//			for (int x : args) {
+//				result += x;
+//			}
+//
+//			return result;
+//		}
 	
 	
 	
