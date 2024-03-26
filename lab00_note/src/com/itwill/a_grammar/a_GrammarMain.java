@@ -2,7 +2,9 @@ package com.itwill.a_grammar;
 
 import java.util.Random; // Random을 사용하기 위한 import 문
 
+
 import java.util.Scanner; // Scanner를 사용하기 위한 import 문
+
 
 public class a_GrammarMain {
 
@@ -124,6 +126,79 @@ public class a_GrammarMain {
 //
 //			return result;
 //		}
+		
+		
+		//클래스(class)
+//		 * 객체(Object): 대상. 프로그램에서 사용하려고 하는 대상.
+//		 * 클래스(Class): 객체 설계도. 객체를 만들기 위해서 필요한 코드.
+//		 * - 객체가 가져야 하는 "데이터"를 변수("필드")로 선언하고,
+//		 * - 객체가 가져야 하는 "기능"을 "메서드"로 선언하는 코드
+//		 * - 변수를 선언할 때 사용할 수 있는 데이터 타입.
+//		 * 인스턴스(Instance): 실제로 생성된 객체.
+		
+//		// 클래스(class): 객체 설계도. 데이터(필드)  + 생성자 + 기능(메서드) => 변수 타입.
+//		public class Score {//점수합계, 평균 등을 구하기 위한 변수들을 선언하는 공간.
+//			
+//			// 필드(field). 멤버 변수. 
+//			int java;
+//			int sql;
+//			int javascript;
+//			
+//			// 생성자(constructor): 필드를 초기화하는 역할
+//			// 객체를 생성하고, 객체의 필드들을 초기화하는 역할.
+//			// 생성자의 이름은 반드시 클래스의 이름과 같아야함!
+//			// 생성자를 작성하는 방법은 메서드 작성방법과 비슷하지만, 리턴 타입이 없음! 리턴타입이 있으면 메서드 => public int Score
+//			// 클래스를 선언할 때 생성자를 하나도 작성(정의)하지 않으면 
+//			// 자바 컴파일러가 "기본 생성자"를 자동으로 작성해 줌.
+//			// 클래스를 선언할 때 생성자를 직접 정의한 경우에는,
+//			// 자바 컴파일러가 기본 생성자를 자동으로 만들어 주지 않음!
+//			// 생성자 오버로딩: 파라미터가 다른 생성자를 여러개 만들 수 있음.
+//			
+//			
+//			// 기본 생성자(default constructor): 아규먼트를 갖지 않는 생성자.
+//			public Score() {
+//				// 아무런 코드를 작성하지 않아도 됨.
+//				// 코드가 없어도 모든 필드들을 그 필드 타입의 기본값으로 초기화를 해 줌.
+//			}
+//			
+//			// 아규먼트를 갖는 생성자.
+//			public Score(int java, int sql, int js) {
+//				this.java = java;	//필드와 파라미터 이름이 같으면 필드 앞에 this.을 붙여 구분
+//				this.sql = sql;
+//				javascript = js;	//필드와 파라미터 이름이 다르면 생략 가능
+//			}
+//			
+//			// 메서드(method).
+//			public int getTotal() {
+//				return java + sql + javascript;
+//			}
+//			
+//			public double getMean() {
+//				return (double) getTotal() / 3;
+//			}
+		
+//		public static void main(String[] args) {
+//			// 기본 생성자를 이용하여 Score객체를 생성:
+//			Score score1 = new Score(); //-> 모든 필드는 기본값으로 생성됨.
+//			System.out.println("java = " + score1.java);
+//			
+//			// score1 인스턴스의 필드 값 변경:
+//			score1.java = 100;
+//			score1.sql = 90;
+//			score1.javascript = 80;
+//			
+//			// score1 인스턴스의 메서드 호출:
+//			System.out.println("총점: "+score1.getTotal());
+//			System.out.println("평균: "+score1.getMean());
+//			
+//			//아규먼트를 갖는 생성자를 이용한 Score객체 생성:
+//			Score score2 = new Score(100,90,80);
+//			System.out.println("score2 java = "+score2.java);
+//			System.out.println("총점: "+score2.getTotal());
+//			System.out.println("평균: "+score2.getMean());
+//
+//		}
+
 	
 	
 	
