@@ -26,7 +26,8 @@ public class LambdaMain01 {
 		System.out.println("result = " + result);
 
 		// ------------익명 클래스를 사용한 코드------------------
-		result = calc.calculate(new Calculable() {
+		result = calc.calculate(new Calculable() { // 함수형인터페이스 이름으로 생성자 호출하고 
+			// ctrl + space하면 이클립스가 만들어줌
 
 			@Override
 			public double calculate(double x, double y) {
