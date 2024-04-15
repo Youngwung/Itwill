@@ -9,7 +9,26 @@ interface Myfilter {
 	boolean test(Object x);
 }
 
+@FunctionalInterface
+interface MyMapper {
+	Object transform(Object x);
+}
+
+
+
+
 public class LambdaMain02 {
+	
+	public List<Object> map(List<Object> list, MyMapper mapper) {
+		
+		List<Object> result = new ArrayList<Object>();
+		
+		for (Object x : list) {
+			result.add(mapper.transform(x));
+		}
+		
+		return result;
+	}
 	
 	public List<Object> filter(List<Object> list, Myfilter filter) {
 		List<Object> result = new ArrayList<Object>();
@@ -50,6 +69,29 @@ public class LambdaMain02 {
 		System.out.println(longWords);
 		
 		
+
+		
+//		 numpers의 원소들의 제곱을 저장하는 리스트:
+//		List<Object> squares = app.map(numbers, new MyMapper() {
+//			
+//			@Override
+//			public Object transform(Object x) {
+//				Integer i = (Integer) x;
+//				return i*i;
+//			}
+//		});
+		
+		List<Object> squares = app.map(numbers, (x) -> (Integer) x * (Integer) x);
+		System.out.println(squares);
+		
+		
+		
+		// languages의 문자열을 대문자로 변환한 리스트: 
+		// map으로 만들어보기
+		
+		List<Object> upperCases = app.map(languages, (x) -> ((String) x).toUpperCase());
+		System.out.println(upperCases);
 	}
 
 }
+
