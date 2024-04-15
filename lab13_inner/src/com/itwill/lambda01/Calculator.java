@@ -2,7 +2,7 @@ package com.itwill.lambda01;
 
 public class Calculator {
 	
-	// 함수형 인터페이스: 추상 메서드를 오직 1개만 갖는 인터페이스.(인지 검사하도록 컴파일러에게 지시.)
+	// 함수형 인터페이스(FunctionalInterface): 추상 메서드를 오직 1개만 갖는 인터페이스.(인지 검사하도록 컴파일러에게 지시.)
 	@FunctionalInterface
 	public interface Calculable {
 		double calculate(double x, double y);
