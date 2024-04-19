@@ -216,8 +216,9 @@ public class AppMain04 {
 			result = x / y;
 			operator = "/";
 		}
-		String msg = String.format("%.2f %s %.2f = %.2f ", x, operator,y,result); //결과 창에 보여줄 문자열
-		resultField.setText(msg);
+		String msg = String.format("%.2f %s %.2f = %.2f\n ", x, operator,y,result); //결과 창에 보여줄 문자열
+//		resultField.setText(msg);
+		resultField.append(msg);
 		
 		
 	}
